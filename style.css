@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --font-size-base: 17px;
+    --font-size-large: 2rem;
+    --font-size-small: 0.875rem;
+    --princpal-color-blue: #001527;
+    --all-border-radius: 20px;
+  }
+
+/* Cover page */
+.coverpage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent, 95%, #EAEAEA), url("./assets/images/fnd-coverpage.webp");
+    background-position: center;
+    background-size: cover;
+}
+.ps6_image_coverpage{
+    width: 50%;
+    object-fit: cover;
+}
+
+.div_texte_coverpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 20px;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.img_logoPlaystatioon_coverpage{
+    width: 65%;
+}
+.texte_introduction_coverpage{
+    width: 80%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: var(--font-size-base);
+}
+.btn_lienPlaystation_coverpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--princpal-color-blue);
+    width: 180px;
+    height: 50px;
+    border-radius: 40px;
+    color: whitesmoke;
+    box-shadow: 0 0 10px gray;
+    transition: transform 0.5s ease-in-out;
+}
+.btn_lienPlaystation_coverpage:hover{
+    transform: translateX(2px) translateY(-3px);
+}
