@@ -1,3 +1,4 @@
+// Animation section histoire
 const date_history = document.querySelectorAll(".date_histoire");
 const date_1994 = document.getElementById("1994");
 const date_2006 = document.getElementById("2006");
@@ -6,7 +7,7 @@ const date_2000 = document.getElementById("2000");
 const date_2013 = document.getElementById("2013");
 let container_text = document.querySelector(".subcontainer-text_histoire");
 
-console.log(date_1994);
+
 
 function Changement_texte(texte, element) {
     date_history.forEach((el) => el.classList.remove('active'));
@@ -37,4 +38,16 @@ date_2013.addEventListener("click", () => {
     Changement_texte(`Sortie de la PlayStation 4 (PS4) Le 15 novembre 2013, Sony a lancé la PlayStation 4, une console révolutionnaire qui a redéfini l'expérience de jeu. Avec une puissance de traitement exceptionnelle, elle a offert des graphismes de haute qualité et des mondes de jeu plus immersifs. Son interface intuitive permettait une navigation fluide entre les jeux, les applications et les fonctionnalités sociales.
 La PS4 a également transformé l'interaction entre les joueurs grâce au bouton "Share" sur la manette, permettant de capturer, diffuser et partager ses moments de jeu en temps réel. Cela a renforcé la dimension sociale du gaming et ouvert la voie à une nouvelle forme de création de contenu.
 Avec des exclusivités marquantes telles que Horizon Zero Dawn, Spider-Man, Bloodborne et The Last of Us Part II, la PS4 a capturé l'imaginaire des joueurs. Son succès commercial a été fulgurant, atteignant plus de 116 millions d’unités vendues, faisant d'elle l'une des consoles les plus populaires et influentes de l'histoire du jeu vidéo.`, date_2013);
+});
+
+// animation section selection_Playstation
+const item_jeux = document.querySelectorAll(".subcontainer-jeu-container_selection_playstation")
+
+item_jeux.forEach((element) => {
+    element.addEventListener("mouseover", () => {
+        element.classList.add("active2");
+    });
+    element.addEventListener("mouseout", () => {
+        element.classList.remove("active2");
+    });
 });

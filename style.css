@@ -14,7 +14,22 @@
     --secondary-font-grandstander: "Grandstander", sans-serif;
     --tertiary-font-orbitron: "Orbitron", sans-serif;
     --quartuary-font-exo: "Exo", sans-serif;
-  }
+}
+/* scrool bar */
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(3, 0, 53);
+    border-radius: 5px;
+    width: 2px;
+    transition: background-color 0.6s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #0b0b0bda;
+}
 
 /* Cover page */
 .coverpage{
@@ -230,7 +245,6 @@
 /* hero 3 - Playstation plus */
 .playstation_plus{
     height: 100vh;
-    background: linear-gradient(to bottom, );
     background-color: #a6a2a1cc;
 }
 .container_playstation_plus{
@@ -238,7 +252,6 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    height: 80vh;
 }
 .playstation_plus_image{
     width: 70%;
@@ -262,4 +275,65 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 1px 2px 15px rgba(122, 122, 122, 0.589);
+}
+
+/* hero 4 - Selection Playstation */
+.selectionPlaystation{
+    background: linear-gradient(to bottom, #a6a2a1cc, 90%, #414A56);
+    height: 100vh;
+}
+.container_selection_Playstation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    height: 82vh;
+    perspective: 750px;
+}
+.subcontainer-jeu-container_selection_playstation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: clamp(350px, 30%, 350px);
+    background-color: #001527;
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+    height: 600px;
+    transition: transform 0.4s ease-in;
+    transform: translateZ(-70px);
+    font-family: "Orbitron", sans-serif;
+    box-shadow: 0 0 10px black;
+}
+.active2{
+    transform: translateZ(40px);
+}
+.selectionjeu_playstation{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    object-fit: cover;
+    margin: 0 auto;
+}
+.title-subcontainer_playstationplus{
+    font-size: clamp(20px,1.5vw,32px);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.826);
+    cursor: default;
+}
+.text-subcontainer_playstationplus{
+    font-size: clamp(14px,1vw,18px);
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    cursor: default;
+}
+.lien-subcontainer_playstationplus{
+    color: #DAD6D6;
+    text-decoration: underline;
+    transition: color 0.4s ease-in;
+    width: 50%;
+}
+.lien-subcontainer_playstationplus:hover{
+    color: gray;
 }
