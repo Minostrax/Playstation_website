@@ -40,14 +40,22 @@ La PS4 a également transformé l'interaction entre les joueurs grâce au bouton
 Avec des exclusivités marquantes telles que Horizon Zero Dawn, Spider-Man, Bloodborne et The Last of Us Part II, la PS4 a capturé l'imaginaire des joueurs. Son succès commercial a été fulgurant, atteignant plus de 116 millions d’unités vendues, faisant d'elle l'une des consoles les plus populaires et influentes de l'histoire du jeu vidéo.`, date_2013);
 });
 
-// animation section selection_Playstation
-const item_jeux = document.querySelectorAll(".subcontainer-jeu-container_selection_playstation")
+// Animation section selection_Playstation
+const itemsJeux = document.querySelectorAll(".subcontainer-jeu-container_selection_playstation");
+const itemActive = document.querySelector(".cover");
+const itemsInactive = document.querySelectorAll(".corner");
 
-item_jeux.forEach((element) => {
+
+itemsJeux.forEach((element) => {
     element.addEventListener("mouseover", () => {
-        element.classList.add("active2");
+        element.classList.add("active2"); 
+        itemActive.classList.remove("active2");
     });
     element.addEventListener("mouseout", () => {
         element.classList.remove("active2");
+        itemActive.classList.add("active2");
     });
 });
+
+
+

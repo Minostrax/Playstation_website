@@ -280,7 +280,7 @@
 /* hero 4 - Selection Playstation */
 .selectionPlaystation{
     background: linear-gradient(to bottom, #a6a2a1cc, 90%, #414A56);
-    height: 100vh;
+    height: 110vh;
 }
 .container_selection_Playstation{
     display: flex;
@@ -306,6 +306,9 @@
     transform: translateZ(-70px);
     font-family: "Orbitron", sans-serif;
     box-shadow: 0 0 10px black;
+}
+.cover:hover{
+    transform: translateZ(40px);
 }
 .active2{
     transform: translateZ(40px);
@@ -336,4 +339,9 @@
 }
 .lien-subcontainer_playstationplus:hover{
     color: gray;
+}
+/* hero 5 - Avenir_playstation */
+.avenir_playstation{
+    height: 100vh;
+    background: url("assets/images/cover-avenir.png") center / cover no-repeat;
 }
