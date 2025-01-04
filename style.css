@@ -5,9 +5,6 @@
     text-decoration: none;
 }
 :root {
-    --font-size-base: 17px;
-    --font-size-large: 2rem;
-    --font-size-small: 0.875rem;
     --princpal-color-blue: #001527;
     --all-border-radius: 20px;
     --primary-font-roboto: "Roboto", sans-serif;
@@ -344,4 +341,25 @@
 .avenir_playstation{
     height: 100vh;
     background: url("assets/images/cover-avenir.png") center / cover no-repeat;
+}
+.group_txt_avenir_playstation{
+    color: whitesmoke;
+    padding: 0 30px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_avenir_playstation{
+    width: clamp(300px, 40%, 500px);
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 15px 0 0;
+}
+.txt_avenir_Playstation{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-size: clamp(12px,1.1vw,24px);
+    padding: 30px 0;
 }
