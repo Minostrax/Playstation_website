@@ -385,7 +385,7 @@
         gap: 5px;
     }
     .playstation_plus{
-        height: 70vh;
+        height: 80vh;
     }
     .avenir_playstation{
         height: 90vh;
@@ -440,5 +440,96 @@
     }
     .txt_avenir_Playstation{
         line-height: 1.2;
+    }
+    .container1_histoire{
+        min-width: 100px;
+    }
+}
+@media (max-width:900px){
+    .grid-actualites_vlogactu{
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .link_histoire{
+        padding: 15px 15px 5px 15px;
+    }
+    .subcontainer-text_histoire{
+        font-size: clamp(12px, 1vw, 24px);
+    }
+    .vlogactu{
+        height: 115vh;
+    }
+    .container_selection_Playstation{
+        width: 50%;
+        gap: 1px;
+    }
+    .subcontainer-jeu-container_selection_playstation{
+        height: 500px;
+        min-width: 260px;
+    }
+    .text-subcontainer_playstationplus{
+        font-size: clamp(12px, 1vw, 18px);
+    }
+    .actu_vlogactu{
+        justify-content: space-evenly;
+    }
+    .texte_introduction_coverpage{
+        width: 90%;
+    }
+}
+@media (max-width: 800px) {
+    .corner{
+        position: absolute;
+    }
+    .left{
+        left: 0;
+    }
+    .right{
+        right: 0;
+    }
+    .container_selection_Playstation{
+        width: 80%;
+    }
+    .txt_playstation_plus{
+        padding: 0;
+    }
+    .coverpage{
+        background: linear-gradient(110deg, #0f1428 45%, white 40%);
+    }
+}
+@media (max-width: 700px) {
+    .grid-actualites_vlogactu{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 95%;
+    }
+    .actu1{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .actu2,
+    .actu3{
+        grid-column: 1;
+    }
+    .actu2{
+        grid-row: 2;
+    }
+    .actu3{
+        grid-row: 3;
+    }
+    .actu_vlogactu{
+        height: 250px;
+    }
+    .vlogactu{
+        height: 130vh;
+    }
+    .ps6-edition30ans_actu_vlogactu{
+        max-width: 200px;
+    }
+    .actu1{
+        flex-direction: row;
+    }
+    .subcontainer_text_actu1_actuvlog_vlogactu{
+        display: flex;
+        flex-direction: column;
     }
 }
