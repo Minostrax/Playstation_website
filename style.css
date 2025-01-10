@@ -39,11 +39,21 @@
     background-position: center;
     background-size: cover;
 }
+.container1_coverpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
 .ps6_image_coverpage{
     width: 50%;
     object-fit: cover;
 }
-
+#lien_respo{
+    display: none;
+}
 .div_texte_coverpage{
     display: flex;
     flex-direction: column;
@@ -80,7 +90,7 @@
 /* -- hero2 - vlog&Actualites -- */
 .vlogactu{
     height: 110vh;
-    background-color: #EAEAEA;
+    background: linear-gradient(to bottom, white 10%, #eaeaea);
 }
 .prinicpal_title{
     width: 100%;
@@ -531,5 +541,88 @@
     .subcontainer_text_actu1_actuvlog_vlogactu{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+    }
+    .txt_playstation_plus{
+        line-height: 1.2;
+    }
+    .text_actu_vlogactu{
+        font-size: clamp(10px, 0.8vw, 26px);
+    }
+    .actu_vlogactu{
+        justify-content: space-between;
+    }
+    .group_txt_avenir_playstation{
+        height: auto;
+    }
+    .txt_avenir_Playstation{
+        padding: 0;
+    }
+}
+@media (max-width: 650px) {
+    .coverpage{
+        grid-template-columns: 1fr;
+        background: linear-gradient(45deg, #00072d, transparent, rgb(95, 95, 95));
+        height: 110vh;
+    }    
+    .ps6_image_coverpage{
+        width: 35%;
+    }
+    .div_texte_coverpage{
+        order: -1;
+        padding: 20px;
+    }
+    #lien_respo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Exo', sans-serif;
+    }
+    .btn_lienPlaystation_coverpage{
+        display: none;
+    }
+    .subcontainer-text_histoire{
+        font-size: clamp(10px, 0.9vw, 20px);
+    }
+    .container_playstation_plus{
+        grid-template-columns: 1fr;
+    }
+    .playstation_plus_image{
+        max-width: 300px;
+        float: left;
+    }
+    .playstation_plus{
+        height: 90vh;
+    }
+    .txt_playstation_plus{
+        padding: 0 10px;
+    }
+    .avenir_playstation{
+        height: auto;
+    }
+}
+@media (max-width: 600px) {
+    .container_selection_Playstation{
+        width: 95%;
+    }
+    .hero_histoire{
+        grid-template-columns: 1fr;
+    }
+    .container1_histoire{
+        height: 90%;
+    }
+    .subcontainer-text_histoire{
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    .link_histoire{
+        margin-left: 15px;
+    }
+    .txt_playstation_plus{
+        font-size: clamp(10px, 0.9vw, 20px);
+    }
+    .group_txt_avenir_playstation{
+        padding: 0 15px;
     }
 }

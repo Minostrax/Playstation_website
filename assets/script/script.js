@@ -57,5 +57,22 @@ itemsJeux.forEach((element) => {
     });
 });
 
+// responsive
+const mediaQuery = window.matchMedia("(max-width: 600px)");
+const txt_actualities = document.querySelector(".text1")
+
+function updateText(e) {
+    if (e.matches) {
+      txt_actualities.textContent = `La PS5 édition 30 ans est bien plus qu’une simple console : c’est une célébration de trois décennies qui ont marqué l’histoire du jeu vidéo et transformé l’industrie. Conçue pour rendre hommage à l’héritage de PlayStation, cette édition limitée se distingue par un design unique et raffiné, reflétant l’évolution et l’impact de la marque depuis 1994. <br>
+
+                        Avec ses lignes élégantes et ses détails exclusifs, elle évoque les moments marquants qui ont défini PlayStation, tout en offrant des performances exceptionnes.`;
+    } else {
+      txt_actualities.textContent = `La PS5 édition 30 ans est bien plus qu’une simple console : c’est une célébration de trois décennies qui ont marqué l’histoire du jeu vidéo et transformé l’industrie. Conçue pour rendre hommage à l’héritage de PlayStation, cette édition limitée se distingue par un design unique et raffiné, reflétant l’évolution et l’impact de la marque depuis 1994. <br>
+                                        Avec ses lignes élégantes et ses détails exclusifs, elle évoque les moments marquants qui ont défini PlayStation, tout en offrant des performances exceptionnelles : graphismes époustouflants, fluidité incomparable et technologies de pointe comme le ray tracing et la 4K.  <br>
+                                        Cette console est bien plus qu’un outil de divertissement, c’est une pièce de collection pour les passionnés de technologie et d’histoire vidéoludique.`;
+    }
+}
+updateText(mediaQuery);
+mediaQuery.addEventListener("change", updateText);
 
 
