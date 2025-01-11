@@ -100,6 +100,7 @@
     padding: 50px 0;
     font-family: var(--secondary-font-grandstander);
     font-size: clamp(24px,1.9rem,32px);
+    text-align: center;
 }
 .grid-actualites_vlogactu{
     width: clamp(700px, 90%, 1200px);
@@ -624,5 +625,116 @@
     }
     .group_txt_avenir_playstation{
         padding: 0 15px;
+    }
+}
+@media (max-width: 550px) {
+    .hero_histoire{
+        height: 75%;
+    }
+    .container_selection_Playstation{
+        width: 100%;
+    }
+    .container1_histoire{
+        height: 100%;
+    }
+    .subtitle_actu_vlogactu{
+        font-size: clamp(12px, 0.9vw, 32px);
+    }
+    .subtitle_actu_vlogactu{
+        font-size: 3.5vw;
+    }
+    .link_actu_vlogactu{
+        min-height: 20px;
+        font-size: 12px;
+    }
+    .link_histoire{
+        font-size: 12px;
+    }
+    .vlogactu{
+        height: 160vh;
+    }
+    .grid-actualites_vlogactu{
+        grid-template-rows: auto;
+    }
+    .actu1{
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        min-height: 300px;
+        gap: 0;
+    }
+    .ps6-edition30ans_actu_vlogactu{
+        max-width: 250px;
+    }
+}
+@media (max-width: 470px) {
+    .texte_introduction_coverpage{
+        width: 95%;
+    }
+    .subcontainer_text_actu1_actuvlog_vlogactu{
+        gap: 5px;
+    }
+    .image_avenir_playstation{
+        float: none;
+        margin: 0 auto;
+        width: clamp(200px, 70%, 400px);
+    }
+    .subgroup_txt_avenir_playstation{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .subcontainer-jeu-container_selection_playstation{
+        min-width: 230px;
+        width: 60%;
+    }
+    .coverpage{
+        height: 100vh;
+    }
+    .texte_introduction_coverpage{
+        font-size: 12px;
+    }
+    .text_actu_vlogactu{
+        line-height: 1.2;
+    }
+    .vlogactu{
+        height: auto;
+    }
+}
+@media (max-width:400px) {
+    .text-subcontainer_playstationplus{
+        font-size: 11px;
+    }
+    .txt_avenir_Playstation{
+        font-size: 11px;
+    }
+    .text_actu_vlogactu{
+        line-height: 1.1;
+        font-size: 11px;
+    }
+    .subtitle_actu_vlogactu{
+        font-size: 18px;
+    }
+    .actu_vlogactu{
+        height: auto;
+    }
+}
+@media (max-width:330px) {
+    .vlogactu{
+        height: auto;
+    }
+    .text_actu_vlogactu{
+        font-size: 10px;
+    }
+    .txt_playstation_plus{
+        padding: 0 5px;
+        font-size: 9px;
+    }
+    .txt_avenir_Playstation{
+        font-size: 10px;
+    }
+    .subcontainer-jeu-container_selection_playstation{
+        height: 470px;
     }
 }

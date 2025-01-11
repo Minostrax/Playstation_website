@@ -44,7 +44,7 @@ Avec des exclusivités marquantes telles que Horizon Zero Dawn, Spider-Man, Bloo
 const itemsJeux = document.querySelectorAll(".subcontainer-jeu-container_selection_playstation");
 const itemActive = document.querySelector(".cover");
 const itemsInactive = document.querySelectorAll(".corner");
-
+itemActive.classList.add("active2")
 
 itemsJeux.forEach((element) => {
     element.addEventListener("mouseover", () => {
